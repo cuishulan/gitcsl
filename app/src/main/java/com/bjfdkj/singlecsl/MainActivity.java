@@ -47,7 +47,7 @@ public class MainActivity extends BaseActivity {
     String TAG = "MainActivity";
     private Display display;
     DisplayManager displayManager;
-    public boolean onTouchEvent;
+    public boolean onTouchEvent;   //事件
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
