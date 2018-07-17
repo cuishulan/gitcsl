@@ -1,0 +1,96 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.bjfdkj.singlecsl"
+        minSdkVersion 17
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        //添加如下配置就OK了，解决 butterknife
+        javaCompileOptions {
+            annotationProcessorOptions { includeCompileClasspath = true }
+        }
+
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+
+
+    //配置GreenDao信息
+    greendao {
+        schemaVersion 1   //数据库版本号
+        daoPackage 'com.bjfdkj.singlecsl.db'
+        targetGenDir 'src/main/java'
+    }
+    buildToolsVersion '26.0.2'
+
+}
+
+dependencies {
+    //引入  Libs   api-release.aar
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    compile(name: 'api-release', ext: 'aar')   //引入  API
+    //-----------------------------------------------------
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //RecyclerView
+    //noinspection GradleCompatible
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+
+    // 找ID插件
+    implementation 'com.jakewharton:butterknife:7.0.1'
+    //GreenDao数据库
+    implementation 'org.greenrobot:greendao:3.2.0'
+    // add library
+    compile 'org.greenrobot:greendao-generator:3.2.0'
+    //ViewPager广告轮播
+    //    compile "com.android.support:support-v4:+"
+    //    加载图片
+    compile 'com.squareup.picasso:picasso:2.3.2'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+
+    //图片加载器
+    implementation 'com.github.chrisbanes:PhotoView:2.1.3'
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
+    //RXtools 工具
+    compile 'com.github.vondear:RxTools:v1.7.7.3'
+    //请替换成上方 JitPack 最新的版本号
+    //解决依赖冲突问题
+    androidTestCompile('com.android.support:support-annotations:27.1.0') {
+        force = true
+    }
+}

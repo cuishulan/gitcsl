@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@mipmap/bglogin"
+    android:orientation="horizontal"
+    tools:showIn="@layout/activity_bookkeeper">
+<!--档案管理  top  部-->
+    <Button
+        android:layout_width="@dimen/bookkeeper_w2"
+        android:layout_height="match_parent"
+        android:background="@drawable/touming"
+        android:text="编号"
+        android:textColor="@color/shenggreen" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/bookkepper_activity_view" />
+
+    <Button
+        android:layout_width="@dimen/bookkeeper_w1"
+        android:layout_height="match_parent"
+        android:background="@drawable/touming"
+        android:text="单位名称"
+        android:textColor="@color/shenggreen" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/bookkepper_activity_view" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/touming"
+        android:text="姓名"
+        android:textColor="@color/shenggreen" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/bookkepper_activity_view" />
+
+    <Button
+        android:layout_width="@dimen/bookkeeper_w2"
+        android:layout_height="match_parent"
+        android:background="@drawable/touming"
+        android:text="性别"
+        android:textColor="@color/shenggreen" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/bookkepper_activity_view" />
+
+    <Button
+        android:layout_width="@dimen/bookkeeper_w2"
+        android:layout_height="match_parent"
+        android:background="@drawable/touming"
+        android:text="民族"
+        android:textColor="@color/shenggreen" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/bookkepper_activity_view" />
+
+    <Button
+        android:layout_width="@dimen/bookkeeper_w1"
+        android:layout_height="match_parent"
+        android:background="@drawable/touming"
+        android:text="职务名称"
+        android:textColor="@color/shenggreen" />
+</LinearLayout>

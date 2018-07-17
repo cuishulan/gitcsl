@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bglogin"
+    tools:context="com.bjfdkj.singlecsl.activity.function.QueryActivity">
+    <!--查询-->
+    <LinearLayout
+        android:id="@+id/top_manage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/shenggreen"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/query_Btnback"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/left_backz"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/query_select_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="@string/title_activity_query_querys_text"
+            android:textColor="@color/ltgray"
+            android:textSize="@dimen/stylesizecenter" />
+    </LinearLayout>
+    <!--搜索-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:text="@string/title_activity_manage_text_queryselect"
+            android:textColor="@color/shenggreen"
+            android:textSize="@dimen/stylesizemin" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbga_solid"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!--android:singleLine="true" 只输入单行
+ android:cursorVisible="false" 去除光标 -->
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/querySelecteditText"
+                android:layout_width="400dp"
+                android:layout_height="35dp"
+                android:background="@null"
+                android:cursorVisible="false"
+                android:hint="@string/title_activity_manage_text_queryselect_confine"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:text="测试张1号">
+
+            </android.support.design.widget.TextInputEditText>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@mipmap/errorquery" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/querycommit"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/buttonbga"
+            android:gravity="center"
+            android:text="@string/title_activity_manage_text_queryselect_commit"
+            android:textColor="@color/ltgray"
+            android:textSize="@dimen/stylesizemin" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/dkgray" />
+    <!--默认展示档案信息，查询有值 显示，无值提示。-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/top_list" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/query_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</LinearLayout>

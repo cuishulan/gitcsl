@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bjfdkj.singlecsl.activity.function.OrganizationalMActivity">
+
+    <!--维护管理-->
+    <LinearLayout
+        android:id="@+id/top_manage"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/shenggreen"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/query_Btnback"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/left_backz"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/input_exit_storage_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="@string/title_activity_weihu_text"
+            android:textColor="@color/ltgray"
+            android:textSize="@dimen/stylesizecenter" />
+    </LinearLayout>
+    <!--具体内容-->
+    <TextView
+        android:id="@+id/om_tv"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="组织机构管理"
+        />
+    <TextView
+        android:id="@+id/om_tv2"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人员添加管理"
+        />
+</LinearLayout>

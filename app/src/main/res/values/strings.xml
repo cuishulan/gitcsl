@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">档案柜</string>
+    <string name="title_activity_input_storage">InputStorage</string>
+    <string name="title_activity_query">QueryActivity</string>
+    <!--共用-->
+    <string name="title_activity_manage_text">档案管理</string>
+    <string name="title_activity_weihu_text">维护管理</string>
+    <string name="title_activity_input_storage_text">档案入库</string>
+    <string name="title_activity_exit_storage_text">档案出库</string>
+    <string name="title_activity_query_querys_text">档案查询</string>
+    <string name="title_activity_set_text">系统设置</string>
+    <string name="title_activity_exit_storage">ExitStorageActivity</string>
+    <!--分支 _系统设置 -->
+    <!--分支 _维护管理-->
+    <string name="title_activity_pf">档案人员添加</string>
+    <!--分支 _档案入库-->
+    <!--分支 _档案出库 -->
+    <!--分支 _档案查询-->
+    <string name="title_activity_manage_text_queryselect">请输入要查询的姓名：</string>
+    <string name="title_activity_manage_text_queryselect_commit">完成</string>
+    <string name="title_activity_manage_text_queryselect_confine">比如：张三</string>
+    <!--分支 _档案管理 -->
+    <string name="title_activity_manage_text_back">返回</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+    <!--双屏-->
+    <string name="interstitial_ad_sample">双屏 样本</string>
+    <string name="start_level">入口  屏</string>
+    <string name="next_level">开始/暂停</string>
+    <string name="presentation_text">描述 屏 </string>
+    <!--指纹录入-->
+    <string name="fingerprint_recognition_start">开始指纹识别</string>
+    <string name="fingerprint_recognition_cancel">取消指纹识别</string>
+    <string name="fingerprint_recognition_guide_tip">点击“开始指纹识别”按钮</string>
+    <string name="fingerprint_recognition_tip">请进行指纹识别，长按指纹解锁键</string>
+    <string name="fingerprint_recognition_not_support">此设备不支持指纹解锁</string>
+    <string name="fingerprint_recognition_success">指纹识别成功</string>
+    <string name="fingerprint_recognition_failed">指纹识别失败，请重试！</string>
+    <string name="fingerprint_recognition_error">指纹识别错误，等待几秒之后再重试</string>
+    <string name="fingerprint_recognition_authenticating">指纹识别已经开启，长按指纹解锁键</string>
+    <string name="fingerprint_recognition_unlock_screen">测试密码解锁屏幕</string>
+    <string name="fingerprint_recognition_not_enrolled">您还没有录制指纹，请录入！</string>
+    <string name="fingerprint_not_set_unlock_screen_pws">系统没有设置锁屏密码，请设置！</string>
+    <string name="fingerprint_sys_setting_page">进入系统指纹设置页面</string>
+    <string name="sys_pwd_recognition_success">系统密码识别成功</string>
+    <string name="sys_pwd_recognition_failed">系统密码识别失败</string>
+    <!--指纹录入  succeed  -->
+    <string name="fingerprint_recognition_start_entering">开始指纹录入</string>
+    <string name="fingerprint_recognition_start_entering_three">请用不同指纹录入3次</string>
+
+    <string name="fingerprint_recognition_entering_one">指纹录入第一次</string>
+    <!--第一次录入  -->
+    <string name="fingerprint_recognition_entering_tow">指纹录入第二次</string>
+    <string name="fingerprint_recognition_entering_three">指纹录入第三次</string>
+    <string name="fingerprint_recognition_entering_succeed">指纹录入成功</string>
+    <string name="fingerprint_recognition_entering_error">指纹录入失败</string>
+    <!--相机  cancel-->
+    <string name="start_camera">开始拍照Camera</string>
+    <string name="cancel_camera">取消拍照Camera</string>
+    <string name="title_activity_camear_voide">调用系统录像</string>
+    <string name="startCamear_Voide">开始录像</string>
+    <string name="closeCamear_Voide">关闭录像</string>
+    <!--自定义-->
+   <!-- <string name="aPP_utils_PerformRestast">测试重新开始</string>
+    <string name="PreformResume">屏幕失去焦点开始执行校验</string>
+    <string name="app_Snyclyen_Xzing">端线重连   顶端返回code 码</string>
+    <string name="app_countSForuche">联合校验，传递开始  不同数据</string>
+    <string name="app_OpenEstiviser">后台服务dispOprcLoCreSkecheng</string>
+    <string name="app_TrandIkesrPreStron">接收返回数据不同联合传递自检</string>
+    &lt;!&ndash;不同使用可以传输&ndash;&gt;
+    <string name="app_httpkOSncykiOble">IF  THERE  noren STUTABLE  PRENTIATION</string>
+    <string name="app_recomenfs">Whilde  is  theChoene  Gihtyren</string>
+    <string name="app_doruthy_OnClickPrenathternayty">WebView的JS注入传递数据联合Presentaittion位置数</string>
+    <string name="app_xikaKng_OgerennDao">连续断点标绘端点个数开始合并 </string>
+    <string name="app_bOkeSherght_rights_bernateSutop">配置数据联合不是同种数据 Aps  串联</string>
+    <string name="app_Jakstaking_ReaadeLing">双屏显示副屏显示内容描述</string>
+    <string name="app_JkDeKent_Enevts">得到数据连接主线程操作WIDT标识链</string>
+    <string name="app_HomeKing_nateHtring">序列联合数据传入 Activity中Stop停止传输</string>
+    <string name="app_OpenJskAndreryt_Htrings">Camera相机 合区封闭Update更改</string>
+    <string name="SrinConPre_hngyends">点位描述 参数pertition  位置</string>
+    <string name="SkintyerLerion_CherCre">核对校验 码不同数据联合MainActivityAdpter数据</string>
+    &lt;!&ndash;联合数据  &ndash;&gt;
+    <string name="AppLkentJike">Latchane Files Ecvent 触发事件</string>-->
+
+     <string  name="app_kingForhty_OthPre">序列传输提供  发115240  </string>
+    <string name="StyncleHuneGdse_Kimter">调用行数，得到初始回传数据联合值</string>
+    <string name="JnKongForMaoen_Shanber">调度联合整理数据 传输值列</string>
+
+
+
+</resources>

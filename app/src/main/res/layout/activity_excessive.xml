@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backg"
+    tools:context=".activity.function.ExcessiveActivity">
+<!--欢迎过渡  com.zk.zhinengguizi.activity.function.ExcessiveActivity-->
+    <TextView
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="某某公司欢迎你"
+        android:textSize="40sp" />
+</android.support.constraint.ConstraintLayout>

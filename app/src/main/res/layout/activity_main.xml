@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="RtlCompat">
+<!--小屏  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/shenggreen"
+        android:gravity="center"
+        android:orientation="horizontal">
+<!-- MaskFilterSpan : 修饰效果，如模糊(BlurMaskFilter)-->
+        <TextView
+            android:id="@+id/Main_top_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="@color/ltgray"
+            android:textSize="@dimen/fab_margin"
+            />
+    </LinearLayout>
+    <!--top上-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <!--档案入库-->
+        <LinearLayout
+            android:id="@+id/mBookkeeper_input_Storage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/ruenter" />
+
+            <TextView
+                android:textSize="@dimen/activity_set_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="档案入库"
+                android:textColor="@color/shenggreen" />
+        </LinearLayout>
+        <!--档案出库-->
+        <LinearLayout
+            android:id="@+id/mBookkeeper_tow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:textStyle="bold"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/chu_exit" />
+
+            <TextView
+                android:textSize="@dimen/activity_set_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="档案出库"
+                android:textColor="@color/shenggreen" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--Recycler点击效果-->
+    <color name="alpha_white">#77FFFFFF</color>
+    <color name="super_light_grey">#FAFAFA</color>
+    <color name="light_grey">#D7D7D7</color>
+    <!--自定义颜色-->
+
+    <color name="black">#312F36</color>
+    <color name="dkgray">#D4D4D4</color>
+    <color name="gray">#F0F0F0</color>
+    <color name="ltgray">#FFFFFF</color>
+    <color name="red">#EA2000</color>
+    <color name="green">#8BCFAC</color>
+    <color name="blues">#3985FF</color>
+    <color name="yellow">#FFF7B2</color>
+    <color name="cyan">#90C552</color>
+    <color name="magenta">#D96858</color>
+    <color name="transparent">#E7EAEB</color>
+    <color name="orange">#FF7835</color>
+    <color name="redcolor">#D81E06</color>
+    <!--常用颜色-->
+    <color name="shenggreen">#298c82</color>
+    <color name="loginbg">#CDE2E7</color>
+    <color name="loginbtn">#5DD4F7</color>
+    <color name="gray_bk">#282828</color>
+    <color name="bookkepper_activity_view">#fcfcfc</color>
+
+
+</resources>

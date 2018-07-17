@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <!--入库归还档案  vertical 垂直-->
+
+    <LinearLayout
+
+        android:id="@+id/top_manage"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/shenggreen"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bookkeeper_Btnback"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/left_backz" />
+
+        <TextView
+            android:id="@+id/input_storage_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="归还档案"
+            android:textColor="@color/ltgray"
+            android:textSize="@dimen/stylesizecenter" />
+    </LinearLayout>
+</RelativeLayout>

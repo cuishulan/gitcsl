@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bglogin"
+    android:orientation="vertical"
+    tools:context="com.bjfdkj.singlecsl.activity.OrganizationActivity">
+    <!--添加组织机构
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="组织机构:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/o_addUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请添加一个你的单位名称" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/o_tncommit"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/buttonbga"
+            android:text="完成提交"
+            android:textColor="@color/ltgray" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bglogin"
+    android:orientation="vertical"
+    tools:context="com.bjfdkj.singlecsl.activity.function.ExitStorageActivity">
+    <!--出库
+
+    com.zk.zhinengguizi.activity.function.ExitStorageActivity-->
+    <LinearLayout
+        android:id="@+id/top_manage"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/shenggreen"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/query_Btnback"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/left_backz"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="@string/title_activity_exit_storage_text"
+            android:textColor="@color/ltgray"
+            android:textSize="@dimen/stylesizecenter" />
+    </LinearLayout>
+    <!--搜索-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:text="请输入要查询的姓名："
+            android:textColor="@color/shenggreen"
+            android:textSize="@dimen/stylesizemin" />
+
+        <LinearLayout
+            android:layout_width="435dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/buttonbga_solid"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!--android:singleLine="true" 只输入单行
+             android:cursorVisible="false" 去除光标 -->
+            <EditText
+                android:id="@+id/exit_storge_name"
+                android:layout_width="400dp"
+                android:layout_height="35dp"
+                android:background="@null"
+                android:cursorVisible="false"
+                android:hint="@string/title_activity_manage_text_queryselect_confine"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:text="周先生"></EditText>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:background="@mipmap/errorquery" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/querycommit"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/buttonbga"
+            android:gravity="center"
+            android:text="@string/title_activity_manage_text_queryselect_commit"
+            android:textColor="@color/ltgray"
+            android:textSize="@dimen/stylesizemin" />
+    </LinearLayout>
+    <!--出库信息-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/dkgray" />
+    <!--默认展示档案信息，查询有值 显示，无值提示。-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索结果："
+            android:textSize="20sp">
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:id="@+id/tv_exit_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+
+                android:layout_toLeftOf="@id/exit_storge_flag"
+                android:gravity="center"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <CheckBox
+                android:visibility="invisible"
+                android:id="@+id/exit_storge_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/test" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="确定" />
+
+</LinearLayout>
